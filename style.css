@@ -75,6 +75,7 @@ body {
     perspective: 1000px;
     width: 90vw;
     height: auto;
+    background-size: cover;
     box-shadow: 0 0 10px 0 yellow;
       white-space: nowrap;
     /* For the page_txt div class zooming out animation */
