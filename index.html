@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>A-OU Games.com(Sample04)</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- CSS Font Style for the website!!-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <!-- Icon for this webpage!!-->
+    <link rel="icon" type="image/x-icon" href="images/spaceship(up)_01.png">
+
+    <!--CSS for Image Swiper-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--CSS Script for Slick-type Image Carousel-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+    <main>
+
+        <!-- Clickable Webpage Link!!-->
+        <div class="logo">
+            <a href="website.html"><img src="images/aougameslogo_2.v4.png"></a>
+
+            <!--Extension to the main Splash screen animation-->
+            <canvas id="particleCanvas"></canvas>
+
+        </div>
+
+        <div class="page_txt">
+            <h2><br>
+                <marquee>WELCOME, TRAVELLER!! ENJOY CHECKING THESE GAMES OUT!!</marquee><br>
+            </h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="page_txt2">
+            <!-- Image Swiper for DIV class: imageslider(still need to find some sources to match this one, later(DONE!!))  -->
+            <!-- Image Swiper for DIV class: Add some text in the middle of the image then zooming in when you hover your mouse over, later..)  -->
+            <div class="carousel-container">
+                <!--<h2>Image Slider for this border-box view!!</h2>-->
+                <div class="carousel" href="#https://ppl-022.itch.io/retrocadezonegame01">
+                    <a href="https://ppl-022.itch.io/retrocadezonegame01"><img class="img-carousel"
+                            src="images/Thumbnail_new02.png">
+                    </a>
+                </div>
+                <div class="carousel">
+                    <a href="https://ppl-022.itch.io/arcade-game-02-space-attackers"><img class="img-carousel"
+                            src="images/mainmenuscreenimage_08.png"></a>
+                </div>
+                <div class="carousel">
+                    <a href="https://ppl-022.itch.io/retrogame-03"><img class="img-carousel"
+                            src="images/LemonadeSelloutMainMenuScreen02.png"></a>
+                </div>
+                <div class="carousel">
+                    <a
+                        href="file:///D:/AUnknown/Website%20Stuffs/A-OUGames.com(Sample04)/GameDevJourneyFaceExpressions/imgdisplay.html"><img
+                            class="img-carousel" src="images/gamedevjourney(postponed)_02.png"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--Still need to add some text, revamp the site's code and add some animations for opening/intro later....-->
+        <div class="page_txt3">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>ABOUT THIS WEBSITE:</h2><br>
+            <h2>This site is dedicated to my solo-game projects and there will be drastic
+                changes to it depends on my decision to do so.<br> Please refrain from seeing any
+                accounts that has similarities but also<br> faking it thinking I was scamming even though I don't
+                like "Reddit" and "Youtube".
+                <br>(I'm only using these frequently for random special occasions).
+                <br>
+                <br>I'm not negotiating with anyone(as of now.....)
+            </h2>
+            <h2>Also, this is my first time creating a website dedicated to my own games.
+                <br>However, this is just a "GitHub" domain version since I don't have any budget to
+                <br>purchase any domain sites as of now, though.....
+            </h2>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="page_txt4">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Note: This is just a demo for the website on the games I've made. Unofficial one, but still useful
+                unless decided.<br><br>Reminder: Swipe the images using your mouse cursor, then click on them to
+                visit
+                another game site for download.</h2>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <!--Need to add more div class and also section id's later....-->
+
+    </main>
+
+    <!--JS Script-->
+    <script src="pagescript.js"></script>
+
+    <!--JQuery JS script for this 'HTML' file-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--Slick-JS Script-->
+    <script>
+        /*For the image carousel function */
+        $('.carousel-container').slick({
+            slidesToShow: 3,
+            dots: false,
+            centerMode: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <!--Loader for this webpage!!-->
+    <div class="loader"></div>
+
+    <!--Logo Splash screen animation-->
+    <span id="splash-overlay" class="splash"></span>
+    <span id="welcome" class="z-depth-4"></span>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+/*-------------------------------------------------------*/
+
+/* Entire code for the 'A-OU Games' website 'CSS' style codes. */
+
+body {
+    background-color: black;
+    opacity: 0.8;
+    background-image: url("images/spacebackgroundintro_09.v4.png");
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Google 'Jersey 10' font text view */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.logo {
+    margin: 50px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    opacity: 50px;
+    border-radius: 10px;
+    background: linear-gradient(-40deg, #223822, #173119 45%, #002e02, #001801);
+    box-shadow: 0 0 12px 0 yellow;
+    width: auto;
+    height: auto;
+    /* For the page_txt div class zooming out animation */
+    transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+}
+
+.logo:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -transform: scale(1.3);
+}
+
+/*-------------------------------------------------------*/
+
+/* CSS page_txt codes for it's design flaws */
+.page_txt {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 70px;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 12px 0 yellow;
+    width: auto;
+    height: auto;
+    background: linear-gradient(-40deg, #223822, #173119 45%, #002e02, #001801);
+}
+
+
+.page_txt2 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(-40deg, #223822, #173119 45%, #002e02, #001801);
+    margin: 50px auto;
+    position: relative;
+    padding: 2em;
+    display: flex;
+    perspective: 1000px;
+    width: 90vw;
+    height: auto;
+    box-shadow: 0 0 10px 0 yellow;
+      white-space: nowrap;
+    /* For the page_txt div class zooming out animation */
+    transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+}
+
+.page_txt2:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -transform: scale(1.3);
+}
+
+
+.page_txt3 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 15px;
+    background: linear-gradient(-40deg, #223822, #173119 45%, #002e02, #001801);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 12px 0 yellow;
+    width: auto;
+    height: auto;
+}
+
+
+.page_txt4 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 15px;
+    background: linear-gradient(-40deg, #223822, #173119 45%, #002e02, #001801);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 12px 0 yellow;
+    width: auto;
+    height: auto;
+
+}
+
+/*-------------------------------------------------------*/
+
+/* For the page_txt2's image carousel-container. */
+
+.carousel-container {
+    margin: 5px;
+    padding: 5px;
+    max-width: 100%;
+    width: 100%;
+}
+
+/*-------------------------------------------------------*/
+
+/* For the page_txt2's image carousel slider. */
+
+.carousel {
+    width: 250vw;
+    height: auto;
+    padding: 1em;
+    white-space: nowrap;
+}
+
+/*-------------------------------------------------------*/
+
+/* For the img-carousel's view. */
+
+.img-carousel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    align-items: center;
+    /* For the image-carousel div class zooming out animation */
+    transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+}
+
+/*-------------------------------------------------------*/
+
+/* For the img-carousel hover effects CSS style design */
+
+.img-carousel:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -transform: scale(1);
+    box-shadow: 0 0 20px rgba(213, 231, 46, 0.3);
+}
+
+.img-carousel::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent, transparent 30%,
+            rgba(255, 251, 0, 0.637));
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.img-carousel:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
+
+.img-carousel::after {
+    content: '';
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    border: 1px solid #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 90;
+    transition: all 0.3s;
+    transform: scale(1.1);
+    opacity: 0;
+    display: block;
+    opacity: 0;
+}
+
+/*-------------------------------------------------------*/
+
+
+/* 'CSS' style codes for the 'HTML' text design. */
+
+h2 {
+    color: yellow;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+h1 {
+    color: yellow;
+    box-sizing: border-box;
+    justify-content: center;
+    font-size: 15px;
+    display: flex;
+}
+
+h3 {
+    color: yellow;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+h3 .img-hover-description {
+    transform: translateY(0.5rem);
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+/*-------------------------------------------------------*/
+
+/* Loading screen animation CSS code  */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4b712;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid green;
+    border-top-color: rgb(7, 94, 100);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/* Particle-effects in background */
+
+main {
+    flex: 1 0 auto;
+}
+
+#particleCanvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

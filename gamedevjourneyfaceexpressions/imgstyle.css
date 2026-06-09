@@ -1,0 +1,33 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.page_txt {
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 12px 0 yellow;
+    width: auto;
+    height: auto;
+    background-color: rgb(7, 46, 7);
+    /* For the page_txt div class zooming out animation */
+    transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+}
+
+h2 {
+    color: yellow;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
