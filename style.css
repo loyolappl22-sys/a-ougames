@@ -300,8 +300,7 @@ main {
 
 /* Code style for page's mobile-view appearance */
 
-@media screen and (max-width: 768px) {
-  .column{
-    width:100%
-  }
+@media screen and (min-width: 200px) and (max-width: 400px) {
+    img { display: none; }
+}
 }
